@@ -325,7 +325,7 @@
         let temperature = document.getElementById('temperature2').value;
         if (IsEmptyOrNull(temperature)) return false;
         if (!isNaN(temperature)) {
-            temperature = temperature + 273;
+            temperature = Number(temperature) + 273;
             let bochang = 2898 / temperature;
             document.getElementById('area2').innerText = bochang;
             document.getElementById('area2Warning').style.display = "none";

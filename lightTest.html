@@ -326,8 +326,8 @@
         if (IsEmptyOrNull(temperature)) return false;
         if (!isNaN(temperature)) {
             temperature = temperature + 273;
-            let length = 2898 / temperature;
-            document.getElementById('area2').innerText = length;
+            let bochang = 2898 / temperature;
+            document.getElementById('area2').innerText = bochang;
             document.getElementById('area2Warning').style.display = "none";
         } else {
             document.getElementById('area2Warning').style.display = "block";
